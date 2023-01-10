@@ -380,34 +380,35 @@ class Url(AnyUrl, Primitive):
         cls, value: str, field: "ModelField", config: "BaseConfig"
     ) -> Union["AnyUrl", str]:
         """ """
-        if value.startswith("mailto:"):
-            schema = value[0:7]
-            email = value[7:]
-            realname = parseaddr(email)[0]
-            name, email = validate_email(email)
-            if realname:
-                email = formataddr((name, email))
-            return schema + email
-        elif value.startswith("mllp:") or value.startswith("llp:"):
-            # xxx: find validation
-            return value
-        elif value in FHIR_PRIMITIVES:
-            # Extensions may contain a valueUrl for a primitive FHIR type
-            return value
+        return value
+        # if value.startswith("mailto:"):
+        #     schema = value[0:7]
+        #     email = value[7:]
+        #     realname = parseaddr(email)[0]
+        #     name, email = validate_email(email)
+        #     if realname:
+        #         email = formataddr((name, email))
+        #     return schema + email
+        # elif value.startswith("mllp:") or value.startswith("llp:"):
+        #     # xxx: find validation
+        #     return value
+        # elif value in FHIR_PRIMITIVES:
+        #     # Extensions may contain a valueUrl for a primitive FHIR type
+        #     return value
 
-        try:
-            return AnyUrl.validate(value, field, config)
-        except Exception:
-            # we are allowing relative path
-            if not value.startswith("/"):
-                matched = cls.path_regex.match("/" + value)
-            else:
-                matched = cls.path_regex.match(value)
-            if matched is not None:
-                # @ToDo: required resource type validation?
-                # fx: resource type = matched.groupdict().get("resourceType")
-                return value
-            raise
+        # try:
+        #     return AnyUrl.validate(value, field, config)
+        # except Exception:
+        #     # we are allowing relative path
+        #     if not value.startswith("/"):
+        #         matched = cls.path_regex.match("/" + value)
+        #     else:
+        #         matched = cls.path_regex.match(value)
+        #     if matched is not None:
+        #         # @ToDo: required resource type validation?
+        #         # fx: resource type = matched.groupdict().get("resourceType")
+        #         return value
+        #     raise
 
     @classmethod
     def to_string(cls, value):
@@ -473,17 +474,18 @@ class Date(datetime.date, Primitive):
             # default handler
             return parse_date(value)
 
-        match = FHIR_DATE_PARTS.match(value)
+        # match = FHIR_DATE_PARTS.match(value)
 
-        if not match:
-            if not cls.regex.match(value):
-                raise DateError()
-        elif not match.groupdict().get("day"):
-            if match.groupdict().get("month") and int(match.groupdict()["month"]) > 12:
-                raise DateError()
-            # we keep original
-            return value
-        return parse_date(value)
+        # if not match:
+        #     if not cls.regex.match(value):
+        #         raise DateError()
+        # elif not match.groupdict().get("day"):
+        #     if match.groupdict().get("month") and int(match.groupdict()["month"]) > 12:
+        #         raise DateError()
+        #     # we keep original
+        #     return value
+        # return parse_date(value)
+        return value
 
     @classmethod
     def to_string(cls, value):
@@ -530,23 +532,24 @@ class DateTime(datetime.datetime, Primitive):
         if not isinstance(value, str):
             # default handler
             return parse_datetime(value)
-        match = FHIR_DATE_PARTS.match(value)
-        if match:
-            if (
-                match.groupdict().get("year")
-                and match.groupdict().get("month")
-                and match.groupdict().get("day")
-            ):
-                return parse_date(value)
-            elif match.groupdict().get("year") and match.groupdict().get("month"):
-                if int(match.groupdict()["month"]) > 12:
-                    raise DateError()
-            # we don't want to loose actual information, so keep as string
-            return value
-        if not cls.regex.match(value):
-            raise DateTimeError()
+        # match = FHIR_DATE_PARTS.match(value)
+        # if match:
+        #     if (
+        #         match.groupdict().get("year")
+        #         and match.groupdict().get("month")
+        #         and match.groupdict().get("day")
+        #     ):
+        #         return parse_date(value)
+        #     elif match.groupdict().get("year") and match.groupdict().get("month"):
+        #         if int(match.groupdict()["month"]) > 12:
+        #             raise DateError()
+        #     # we don't want to loose actual information, so keep as string
+        #     return value
+        # if not cls.regex.match(value):
+        #     raise DateTimeError()
 
-        return parse_datetime(value)
+        # return parse_datetime(value)
+        return value
 
     @classmethod
     def to_string(cls, value):
@@ -585,9 +588,9 @@ class Instant(datetime.datetime, Primitive):
     @classmethod
     def validate(cls, value):
         """ """
-        if isinstance(value, str):
-            if not cls.regex.match(value):
-                raise DateTimeError()
+        # if isinstance(value, str):
+        #     if not cls.regex.match(value):
+        #         raise DateTimeError()
         return parse_datetime(value)
 
     @classmethod
@@ -618,9 +621,9 @@ class Time(datetime.time, Primitive):
     @classmethod
     def validate(cls, value):
         """ """
-        if isinstance(value, str):
-            if not cls.regex.match(value):
-                raise TimeError()
+        # if isinstance(value, str):
+        #     if not cls.regex.match(value):
+        #         raise TimeError()
 
         return parse_time(value)
 
