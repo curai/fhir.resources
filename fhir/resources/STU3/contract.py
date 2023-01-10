@@ -396,7 +396,6 @@ class Contract(domainresource.DomainResource):
             "rule",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1013(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -557,7 +556,6 @@ class ContractFriendly(backboneelement.BackboneElement):
             "contentReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1847(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -653,7 +651,6 @@ class ContractLegal(backboneelement.BackboneElement):
             "contentReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1490(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -749,7 +746,6 @@ class ContractRule(backboneelement.BackboneElement):
             "contentReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1406(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1235,7 +1231,6 @@ class ContractTermValuedItem(backboneelement.BackboneElement):
             "net",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2422(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1426,7 +1421,6 @@ class ContractValuedItem(backboneelement.BackboneElement):
             "net",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2014(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

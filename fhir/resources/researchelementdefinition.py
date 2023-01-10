@@ -613,7 +613,6 @@ class ResearchElementDefinition(domainresource.DomainResource):
             "characteristic",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2752(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -672,7 +671,6 @@ class ResearchElementDefinition(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2752(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1079,7 +1077,6 @@ class ResearchElementDefinitionCharacteristic(backboneelement.BackboneElement):
             "participantEffectiveGroupMeasure",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4190(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

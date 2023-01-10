@@ -376,7 +376,6 @@ class ConceptMap(domainresource.DomainResource):
             "group",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1181(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -435,7 +434,6 @@ class ConceptMap(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1181(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -871,7 +869,6 @@ class ConceptMapGroupElementTargetDependsOn(backboneelement.BackboneElement):
             "display",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3929(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1022,7 +1019,6 @@ class ConceptMapGroupUnmapped(backboneelement.BackboneElement):
             "url",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2520(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

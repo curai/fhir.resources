@@ -270,7 +270,6 @@ class BiologicallyDerivedProductCollection(backboneelement.BackboneElement):
             "collectedPeriod",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3898(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -376,7 +375,6 @@ class BiologicallyDerivedProductManipulation(backboneelement.BackboneElement):
             "timePeriod",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4127(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -504,7 +502,6 @@ class BiologicallyDerivedProductProcessing(backboneelement.BackboneElement):
             "timePeriod",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3908(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

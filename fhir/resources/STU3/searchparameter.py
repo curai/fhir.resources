@@ -475,7 +475,6 @@ class SearchParameter(domainresource.DomainResource):
             "component",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1724(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -589,7 +588,6 @@ class SearchParameterComponent(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "definition", "expression"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2673(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

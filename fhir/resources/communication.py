@@ -417,7 +417,6 @@ class Communication(domainresource.DomainResource):
             "note",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1543(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -553,7 +552,6 @@ class CommunicationPayload(backboneelement.BackboneElement):
             "contentReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2247(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

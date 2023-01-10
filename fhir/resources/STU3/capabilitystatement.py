@@ -499,7 +499,6 @@ class CapabilityStatement(domainresource.DomainResource):
             "document",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2158(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -638,7 +637,6 @@ class CapabilityStatementDocument(backboneelement.BackboneElement):
             "profile",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2989(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -750,7 +748,6 @@ class CapabilityStatementImplementation(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "description", "url"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3630(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -957,7 +954,6 @@ class CapabilityStatementMessagingEndpoint(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "protocol", "address"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3917(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1143,7 +1139,6 @@ class CapabilityStatementMessagingEvent(backboneelement.BackboneElement):
             "documentation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3598(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1256,7 +1251,6 @@ class CapabilityStatementMessagingSupportedMessage(backboneelement.BackboneEleme
         """
         return ["id", "extension", "modifierExtension", "mode", "definition"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4744(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1458,7 +1452,6 @@ class CapabilityStatementRest(backboneelement.BackboneElement):
             "compartment",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2572(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1569,7 +1562,6 @@ class CapabilityStatementRestInteraction(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "code", "documentation"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3718(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1677,7 +1669,6 @@ class CapabilityStatementRestOperation(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "definition"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3511(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2009,7 +2000,6 @@ class CapabilityStatementRestResource(backboneelement.BackboneElement):
             "searchParam",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3397(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2133,7 +2123,6 @@ class CapabilityStatementRestResourceInteraction(backboneelement.BackboneElement
         """
         return ["id", "extension", "modifierExtension", "code", "documentation"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4558(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2296,7 +2285,6 @@ class CapabilityStatementRestResourceSearchParam(backboneelement.BackboneElement
             "documentation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4500(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2540,7 +2528,6 @@ class CapabilityStatementSoftware(backboneelement.BackboneElement):
             "releaseDate",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2986(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

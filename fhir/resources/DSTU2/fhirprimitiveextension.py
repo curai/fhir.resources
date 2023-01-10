@@ -36,7 +36,6 @@ class FHIRPrimitiveExtension(fhirabstractmodel.FHIRAbstractModel):
         element_property=True,
     )
 
-    @root_validator(pre=True)
     def validate_extension_or_fhir_comment_required(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

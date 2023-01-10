@@ -282,7 +282,6 @@ class Coverage(domainresource.DomainResource):
             "contract",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_980(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -401,7 +400,6 @@ class CoverageClass(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "value", "name"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1496(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -535,7 +533,6 @@ class CoverageCostToBeneficiary(backboneelement.BackboneElement):
             "exception",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2725(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

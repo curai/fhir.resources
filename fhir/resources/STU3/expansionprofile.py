@@ -431,7 +431,6 @@ class ExpansionProfile(domainresource.DomainResource):
             "limitedExpansion",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1840(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -720,7 +719,6 @@ class ExpansionProfileExcludedSystem(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "system", "version"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3307(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -847,7 +845,6 @@ class ExpansionProfileFixedVersion(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "system", "version", "mode"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3087(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

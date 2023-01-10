@@ -311,7 +311,6 @@ class ExampleScenario(domainresource.DomainResource):
             "workflow",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1716(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -450,7 +449,6 @@ class ExampleScenarioActor(backboneelement.BackboneElement):
             "description",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2224(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -611,7 +609,6 @@ class ExampleScenarioInstance(backboneelement.BackboneElement):
             "containedInstance",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2527(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -719,7 +716,6 @@ class ExampleScenarioInstanceContainedInstance(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "resourceId", "versionId"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4265(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -823,7 +819,6 @@ class ExampleScenarioInstanceVersion(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "versionId", "description"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3278(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -971,7 +966,6 @@ class ExampleScenarioProcess(backboneelement.BackboneElement):
             "step",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2455(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1162,7 +1156,6 @@ class ExampleScenarioProcessStepAlternative(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "title", "description", "step"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4004(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1369,7 +1362,6 @@ class ExampleScenarioProcessStepOperation(backboneelement.BackboneElement):
             "response",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3807(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

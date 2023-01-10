@@ -196,7 +196,6 @@ class DataRequirement(element.Element):
             "sort",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1731(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -255,7 +254,6 @@ class DataRequirement(element.Element):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1731(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -519,7 +517,6 @@ class DataRequirementDateFilter(element.Element):
             "valueDuration",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2725(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -614,7 +611,6 @@ class DataRequirementSort(element.Element):
         """
         return ["id", "extension", "path", "direction"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2155(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

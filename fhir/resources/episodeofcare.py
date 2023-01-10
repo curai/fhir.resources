@@ -228,7 +228,6 @@ class EpisodeOfCare(domainresource.DomainResource):
             "account",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1443(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -402,7 +401,6 @@ class EpisodeOfCareStatusHistory(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "status", "period"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2861(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

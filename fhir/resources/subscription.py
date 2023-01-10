@@ -153,7 +153,6 @@ class Subscription(domainresource.DomainResource):
             "channel",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1478(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -302,7 +301,6 @@ class SubscriptionChannel(backboneelement.BackboneElement):
             "header",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2173(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -215,7 +215,6 @@ class MessageHeader(domainresource.DomainResource):
             "focus",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1485(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -333,7 +332,6 @@ class MessageHeaderDestination(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "target", "endpoint"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2635(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -459,7 +457,6 @@ class MessageHeaderResponse(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "identifier", "code", "details"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2319(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -611,7 +608,6 @@ class MessageHeaderSource(backboneelement.BackboneElement):
             "endpoint",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2097(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

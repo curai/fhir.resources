@@ -338,7 +338,6 @@ class ImplementationGuide(domainresource.DomainResource):
             "page",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2146(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -452,7 +451,6 @@ class ImplementationGuideDependency(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "uri"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3189(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -556,7 +554,6 @@ class ImplementationGuideGlobal(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "profile"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2746(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -682,7 +679,6 @@ class ImplementationGuidePackage(backboneelement.BackboneElement):
             "resource",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2830(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -883,7 +879,6 @@ class ImplementationGuidePackageResource(backboneelement.BackboneElement):
             "exampleFor",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3670(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -942,7 +937,6 @@ class ImplementationGuidePackageResource(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3670(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1121,7 +1115,6 @@ class ImplementationGuidePage(backboneelement.BackboneElement):
             "page",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2527(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

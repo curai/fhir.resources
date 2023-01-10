@@ -433,7 +433,6 @@ class TestScript(domainresource.DomainResource):
             "teardown",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1245(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -546,7 +545,6 @@ class TestScriptDestination(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "index", "profile"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2393(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -907,7 +905,6 @@ class TestScriptMetadataLink(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "url", "description"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2435(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1012,7 +1009,6 @@ class TestScriptOrigin(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "index", "profile"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1855(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1167,7 +1163,6 @@ class TestScriptRuleParam(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2143(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1314,7 +1309,6 @@ class TestScriptRulesetRule(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "ruleId", "param"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2378(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1424,7 +1418,6 @@ class TestScriptRulesetRuleParam(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2883(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2026,7 +2019,6 @@ class TestScriptSetupActionAssertRule(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "ruleId", "param"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3399(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2137,7 +2129,6 @@ class TestScriptSetupActionAssertRuleParam(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3904(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2238,7 +2229,6 @@ class TestScriptSetupActionAssertRuleset(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "rulesetId", "rule"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3746(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2343,7 +2333,6 @@ class TestScriptSetupActionAssertRulesetRule(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "ruleId", "param"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4139(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2454,7 +2443,6 @@ class TestScriptSetupActionAssertRulesetRuleParam(backboneelement.BackboneElemen
         """
         return ["id", "extension", "modifierExtension", "name", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4644(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2824,7 +2812,6 @@ class TestScriptSetupActionOperationRequestHeader(backboneelement.BackboneElemen
         """
         return ["id", "extension", "modifierExtension", "field", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4653(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -3191,7 +3178,6 @@ class TestScriptVariable(backboneelement.BackboneElement):
             "sourceId",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2036(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

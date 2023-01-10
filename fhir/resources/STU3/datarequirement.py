@@ -123,7 +123,6 @@ class DataRequirement(element.Element):
             "dateFilter",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1731(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -319,7 +318,6 @@ class DataRequirementCodeFilter(element.Element):
             "valueCodeableConcept",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2722(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -378,7 +376,6 @@ class DataRequirementCodeFilter(element.Element):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2722(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -524,7 +521,6 @@ class DataRequirementDateFilter(element.Element):
             "valueDuration",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2725(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -583,7 +579,6 @@ class DataRequirementDateFilter(element.Element):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2725(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

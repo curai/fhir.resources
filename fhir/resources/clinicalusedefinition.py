@@ -199,7 +199,6 @@ class ClinicalUseDefinition(domainresource.DomainResource):
             "warning",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2310(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -570,7 +569,6 @@ class ClinicalUseDefinitionIndication(backboneelement.BackboneElement):
             "otherTherapy",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3336(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -753,7 +751,6 @@ class ClinicalUseDefinitionInteractionInteractant(backboneelement.BackboneElemen
             "itemCodeableConcept",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4617(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

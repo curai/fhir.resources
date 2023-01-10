@@ -448,7 +448,6 @@ class CodeSystem(domainresource.DomainResource):
             "concept",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1200(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -621,7 +620,6 @@ class CodeSystemConcept(backboneelement.BackboneElement):
             "concept",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1923(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -735,7 +733,6 @@ class CodeSystemConceptDesignation(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "language", "use", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3058(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -925,7 +922,6 @@ class CodeSystemConceptProperty(backboneelement.BackboneElement):
             "valueDateTime",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2797(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -984,7 +980,6 @@ class CodeSystemConceptProperty(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2797(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1111,7 +1106,6 @@ class CodeSystemFilter(backboneelement.BackboneElement):
             "value",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1819(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1274,7 +1268,6 @@ class CodeSystemProperty(backboneelement.BackboneElement):
             "type",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2081(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

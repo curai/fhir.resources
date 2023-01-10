@@ -276,7 +276,6 @@ class CoverageEligibilityResponse(domainresource.DomainResource):
             "error",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2970(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -340,7 +339,6 @@ class CoverageEligibilityResponse(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2970(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -837,7 +835,6 @@ class CoverageEligibilityResponseInsuranceItemBenefit(backboneelement.BackboneEl
             "usedMoney",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_5021(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

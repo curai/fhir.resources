@@ -330,7 +330,6 @@ class StructureMap(domainresource.DomainResource):
             "group",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1458(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -504,7 +503,6 @@ class StructureMapGroup(backboneelement.BackboneElement):
             "rule",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1983(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -645,7 +643,6 @@ class StructureMapGroupInput(backboneelement.BackboneElement):
             "documentation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2515(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -794,7 +791,6 @@ class StructureMapGroupRule(backboneelement.BackboneElement):
             "documentation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2380(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -898,7 +894,6 @@ class StructureMapGroupRuleDependent(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "variable"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3314(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1682,7 +1677,6 @@ class StructureMapGroupRuleSource(backboneelement.BackboneElement):
             "check",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3005(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1741,7 +1735,6 @@ class StructureMapGroupRuleSource(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3005(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2056,7 +2049,6 @@ class StructureMapGroupRuleTargetParameter(backboneelement.BackboneElement):
             "valueDecimal",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3937(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2184,7 +2176,6 @@ class StructureMapStructure(backboneelement.BackboneElement):
             "documentation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2424(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

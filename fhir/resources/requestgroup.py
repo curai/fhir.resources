@@ -336,7 +336,6 @@ class RequestGroup(domainresource.DomainResource):
             "action",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1464(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -786,7 +785,6 @@ class RequestGroupAction(backboneelement.BackboneElement):
             "action",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2068(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -882,7 +880,6 @@ class RequestGroupActionCondition(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "kind", "expression"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3003(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1042,7 +1039,6 @@ class RequestGroupActionRelatedAction(backboneelement.BackboneElement):
             "offsetRange",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3379(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1104,7 +1100,6 @@ class RequestGroupActionRelatedAction(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3379(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

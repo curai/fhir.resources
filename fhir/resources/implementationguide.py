@@ -380,7 +380,6 @@ class ImplementationGuide(domainresource.DomainResource):
             "manifest",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2146(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -582,7 +581,6 @@ class ImplementationGuideDefinitionGrouping(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "description"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4024(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -741,7 +739,6 @@ class ImplementationGuideDefinitionPage(backboneelement.BackboneElement):
             "page",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3560(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -800,7 +797,6 @@ class ImplementationGuideDefinitionPage(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3560(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -901,7 +897,6 @@ class ImplementationGuideDefinitionParameter(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "code", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4121(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1106,7 +1101,6 @@ class ImplementationGuideDefinitionResource(backboneelement.BackboneElement):
             "groupingId",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4019(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1201,7 +1195,6 @@ class ImplementationGuideDefinitionTemplate(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "code", "source", "scope"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4007(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1327,7 +1320,6 @@ class ImplementationGuideDependsOn(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "uri", "packageId", "version"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3051(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1435,7 +1427,6 @@ class ImplementationGuideGlobal(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "profile"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2746(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1647,7 +1638,6 @@ class ImplementationGuideManifestPage(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "title", "anchor"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3350(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1802,7 +1792,6 @@ class ImplementationGuideManifestResource(backboneelement.BackboneElement):
             "relativePath",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3809(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

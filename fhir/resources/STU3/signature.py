@@ -197,7 +197,6 @@ class Signature(element.Element):
             "blob",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1130(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -256,7 +255,6 @@ class Signature(element.Element):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1130(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

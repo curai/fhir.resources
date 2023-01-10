@@ -250,7 +250,6 @@ class MedicationIngredient(backboneelement.BackboneElement):
             "amount",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2247(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -445,7 +444,6 @@ class MedicationPackageContent(backboneelement.BackboneElement):
             "amount",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2629(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

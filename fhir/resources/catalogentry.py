@@ -219,7 +219,6 @@ class CatalogEntry(domainresource.DomainResource):
             "relatedEntry",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1417(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -329,7 +328,6 @@ class CatalogEntryRelatedEntry(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "relationtype", "item"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2652(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

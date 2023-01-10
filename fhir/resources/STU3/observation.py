@@ -549,7 +549,6 @@ class Observation(domainresource.DomainResource):
             "component",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1353(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -608,7 +607,6 @@ class Observation(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1353(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -912,7 +910,6 @@ class ObservationComponent(backboneelement.BackboneElement):
             "referenceRange",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2306(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

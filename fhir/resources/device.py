@@ -463,7 +463,6 @@ class DeviceDeviceName(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "type"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1738(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -806,7 +805,6 @@ class DeviceVersion(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "component", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1512(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

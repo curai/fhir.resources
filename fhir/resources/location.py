@@ -442,7 +442,6 @@ class LocationPosition(backboneelement.BackboneElement):
             "altitude",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1864(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

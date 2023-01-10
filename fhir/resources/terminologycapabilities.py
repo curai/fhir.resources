@@ -441,7 +441,6 @@ class TerminologyCapabilities(domainresource.DomainResource):
             "closure",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2602(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -748,7 +747,6 @@ class TerminologyCapabilitiesCodeSystemVersionFilter(backboneelement.BackboneEle
         """
         return ["id", "extension", "modifierExtension", "code", "op"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4981(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -939,7 +937,6 @@ class TerminologyCapabilitiesExpansionParameter(backboneelement.BackboneElement)
         """
         return ["id", "extension", "modifierExtension", "name", "documentation"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4479(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1048,7 +1045,6 @@ class TerminologyCapabilitiesImplementation(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "description", "url"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4075(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1154,7 +1150,6 @@ class TerminologyCapabilitiesSoftware(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "version"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3431(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1246,7 +1241,6 @@ class TerminologyCapabilitiesTranslation(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "needsMap"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3764(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1338,7 +1332,6 @@ class TerminologyCapabilitiesValidateCode(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "translations"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3777(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

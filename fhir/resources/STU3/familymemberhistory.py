@@ -456,7 +456,6 @@ class FamilyMemberHistory(domainresource.DomainResource):
             "condition",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2155(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -515,7 +514,6 @@ class FamilyMemberHistory(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2155(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -703,7 +701,6 @@ class FamilyMemberHistoryCondition(backboneelement.BackboneElement):
             "note",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3079(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

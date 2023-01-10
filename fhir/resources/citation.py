@@ -457,7 +457,6 @@ class Citation(domainresource.DomainResource):
             "citedArtifact",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1004(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -779,7 +778,6 @@ class CitationCitedArtifactAbstract(backboneelement.BackboneElement):
             "copyright",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3133(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1390,7 +1388,6 @@ class CitationCitedArtifactContributorshipSummary(backboneelement.BackboneElemen
             "value",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4683(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2039,7 +2036,6 @@ class CitationCitedArtifactRelatesTo(backboneelement.BackboneElement):
             "targetAttachment",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3223(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2183,7 +2179,6 @@ class CitationCitedArtifactTitle(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "language", "text"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2812(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2285,7 +2280,6 @@ class CitationCitedArtifactVersion(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "value", "baseCitation"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3049(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2521,7 +2515,6 @@ class CitationRelatesTo(backboneelement.BackboneElement):
             "targetAttachment",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1920(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2656,7 +2649,6 @@ class CitationSummary(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "style", "text"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1765(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

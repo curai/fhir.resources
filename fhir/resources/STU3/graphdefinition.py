@@ -286,7 +286,6 @@ class GraphDefinition(domainresource.DomainResource):
             "link",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1712(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -451,7 +450,6 @@ class GraphDefinitionLink(backboneelement.BackboneElement):
             "target",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2107(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -582,7 +580,6 @@ class GraphDefinitionLinkTarget(backboneelement.BackboneElement):
             "link",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2731(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -721,7 +718,6 @@ class GraphDefinitionLinkTargetCompartment(backboneelement.BackboneElement):
             "description",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3893(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

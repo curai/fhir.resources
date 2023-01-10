@@ -622,7 +622,6 @@ class Measure(domainresource.DomainResource):
             "supplementalData",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_900(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -862,7 +861,6 @@ class MeasureGroupPopulation(backboneelement.BackboneElement):
             "criteria",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2501(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

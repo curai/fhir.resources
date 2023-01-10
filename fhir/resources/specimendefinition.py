@@ -238,7 +238,6 @@ class SpecimenDefinitionTypeTested(backboneelement.BackboneElement):
             "handling",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3071(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -435,7 +434,6 @@ class SpecimenDefinitionTypeTestedContainer(backboneelement.BackboneElement):
             "preparation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4016(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -534,7 +532,6 @@ class SpecimenDefinitionTypeTestedContainerAdditive(backboneelement.BackboneElem
             "additiveReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4813(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

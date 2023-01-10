@@ -424,7 +424,6 @@ class MedicationKnowledgeAdministrationGuidelines(backboneelement.BackboneElemen
             "patientCharacteristics",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4652(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -589,7 +588,6 @@ class MedicationKnowledgeAdministrationGuidelinesPatientCharacteristics(
             "value",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_6941(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -783,7 +781,6 @@ class MedicationKnowledgeDrugCharacteristic(backboneelement.BackboneElement):
             "valueBase64Binary",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3976(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -916,7 +913,6 @@ class MedicationKnowledgeIngredient(backboneelement.BackboneElement):
             "strength",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3175(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1366,7 +1362,6 @@ class MedicationKnowledgeRegulatorySubstitution(backboneelement.BackboneElement)
         """
         return ["id", "extension", "modifierExtension", "type", "allowed"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4515(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -283,7 +283,6 @@ class ProcessRequestItem(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "sequenceLinkId"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2068(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

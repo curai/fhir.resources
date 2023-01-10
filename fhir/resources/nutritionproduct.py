@@ -177,7 +177,6 @@ class NutritionProduct(domainresource.DomainResource):
             "note",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1903(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -537,7 +536,6 @@ class NutritionProductProductCharacteristic(backboneelement.BackboneElement):
             "valueBoolean",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4072(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

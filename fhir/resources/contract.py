@@ -612,7 +612,6 @@ class Contract(domainresource.DomainResource):
             "legallyBindingReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1013(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -792,7 +791,6 @@ class ContractContentDefinition(backboneelement.BackboneElement):
             "copyright",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2771(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -921,7 +919,6 @@ class ContractFriendly(backboneelement.BackboneElement):
             "contentReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1847(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1015,7 +1012,6 @@ class ContractLegal(backboneelement.BackboneElement):
             "contentReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1490(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1111,7 +1107,6 @@ class ContractRule(backboneelement.BackboneElement):
             "contentReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1406(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1395,7 +1390,6 @@ class ContractTerm(backboneelement.BackboneElement):
             "group",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1414(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1822,7 +1816,6 @@ class ContractTermAction(backboneelement.BackboneElement):
             "securityLabelNumber",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2021(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2423,7 +2416,6 @@ class ContractTermAssetValuedItem(backboneelement.BackboneElement):
             "securityLabelNumber",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2934(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -2879,7 +2871,6 @@ class ContractTermOfferAnswer(backboneelement.BackboneElement):
             "valueReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2541(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

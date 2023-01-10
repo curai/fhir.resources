@@ -553,7 +553,6 @@ class EligibilityResponseInsuranceBenefitBalanceFinancial(
             "usedMoney",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_5383(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

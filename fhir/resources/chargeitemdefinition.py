@@ -430,7 +430,6 @@ class ChargeItemDefinition(domainresource.DomainResource):
             "propertyGroup",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2195(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -715,7 +714,6 @@ class ChargeItemDefinitionPropertyGroupPriceComponent(backboneelement.BackboneEl
             "amount",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_5041(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

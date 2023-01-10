@@ -426,7 +426,6 @@ class EvidenceVariable(domainresource.DomainResource):
             "category",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1779(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -562,7 +561,6 @@ class EvidenceVariableCategory(backboneelement.BackboneElement):
             "valueRange",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2629(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -804,7 +802,6 @@ class EvidenceVariableCharacteristic(backboneelement.BackboneElement):
             "groupMeasure",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3226(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -286,7 +286,6 @@ class CompartmentDefinition(domainresource.DomainResource):
             "resource",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2372(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -419,7 +418,6 @@ class CompartmentDefinitionResource(backboneelement.BackboneElement):
             "documentation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3203(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -395,7 +395,6 @@ class OperationDefinitionParameterBinding(BackboneElement):
         one_of_many_required=False,
     )
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2167(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

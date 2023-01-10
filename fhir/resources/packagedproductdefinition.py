@@ -657,7 +657,6 @@ class PackagedProductDefinitionPackageProperty(backboneelement.BackboneElement):
             "valueAttachment",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4308(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -800,7 +799,6 @@ class PackagedProductDefinitionPackageShelfLifeStorage(backboneelement.BackboneE
             "specialPrecautionsForStorage",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_5026(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

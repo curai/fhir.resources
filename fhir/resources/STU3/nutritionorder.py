@@ -240,7 +240,6 @@ class NutritionOrder(domainresource.DomainResource):
             "enteralFormula",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1672(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -551,7 +550,6 @@ class NutritionOrderEnteralFormulaAdministration(backboneelement.BackboneElement
             "rateRatio",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4587(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

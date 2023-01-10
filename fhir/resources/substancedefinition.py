@@ -497,7 +497,6 @@ class SubstanceDefinitionMoiety(backboneelement.BackboneElement):
             "measurementType",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2804(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -741,7 +740,6 @@ class SubstanceDefinitionName(backboneelement.BackboneElement):
             "source",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2538(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -956,7 +954,6 @@ class SubstanceDefinitionProperty(backboneelement.BackboneElement):
             "valueAttachment",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3042(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1199,7 +1196,6 @@ class SubstanceDefinitionRelationship(backboneelement.BackboneElement):
             "source",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3430(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

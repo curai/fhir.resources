@@ -328,7 +328,6 @@ class Encounter(domainresource.DomainResource):
             "partOf",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1130(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -786,7 +785,6 @@ class EncounterStatusHistory(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "status", "period"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2535(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

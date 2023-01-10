@@ -217,7 +217,6 @@ class Dosage(backboneelement.BackboneElement):
             "maxDosePerLifetime",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_764(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -357,7 +356,6 @@ class DosageDoseAndRate(element.Element):
             "rateQuantity",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1830(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

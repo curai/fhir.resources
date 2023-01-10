@@ -282,7 +282,6 @@ class DocumentReference(domainresource.DomainResource):
             "context",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1911(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -558,7 +557,6 @@ class DocumentReferenceRelatesTo(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "code", "target"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2836(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

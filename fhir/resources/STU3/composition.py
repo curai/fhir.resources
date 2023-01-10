@@ -266,7 +266,6 @@ class Composition(domainresource.DomainResource):
             "section",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1349(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -388,7 +387,6 @@ class CompositionAttester(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "mode", "time", "party"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2197(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -584,7 +582,6 @@ class CompositionRelatesTo(backboneelement.BackboneElement):
             "targetReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2265(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -643,7 +640,6 @@ class CompositionRelatesTo(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2265(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

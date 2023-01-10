@@ -104,7 +104,6 @@ class ImmunizationRecommendation(domainresource.DomainResource):
             "recommendation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2928(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -395,7 +394,6 @@ class ImmunizationRecommendationRecommendation(backboneelement.BackboneElement):
             "supportingPatientInformation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4389(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -486,7 +484,6 @@ class ImmunizationRecommendationRecommendationDateCriterion(
         """
         return ["id", "extension", "modifierExtension", "code", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_5714(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

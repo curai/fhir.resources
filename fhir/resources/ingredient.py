@@ -169,7 +169,6 @@ class Ingredient(domainresource.DomainResource):
             "substance",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1222(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -520,7 +519,6 @@ class IngredientSubstanceStrength(backboneelement.BackboneElement):
             "referenceStrength",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2993(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -654,7 +652,6 @@ class IngredientSubstanceStrengthReferenceStrength(backboneelement.BackboneEleme
             "country",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4751(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

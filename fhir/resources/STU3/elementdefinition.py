@@ -3040,7 +3040,6 @@ class ElementDefinition(element.Element):
             "mapping",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1926(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -3099,7 +3098,6 @@ class ElementDefinition(element.Element):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1926(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -3350,7 +3348,6 @@ class ElementDefinitionBase(element.Element):
         """
         return ["id", "extension", "path", "min", "max"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2296(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -3516,7 +3513,6 @@ class ElementDefinitionBinding(element.Element):
             "valueSetReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2618(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -3575,7 +3571,6 @@ class ElementDefinitionBinding(element.Element):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2618(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -3754,7 +3749,6 @@ class ElementDefinitionConstraint(element.Element):
             "source",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2993(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -4518,7 +4512,6 @@ class ElementDefinitionExample(element.Element):
             "valueMeta",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2633(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -4577,7 +4570,6 @@ class ElementDefinitionExample(element.Element):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2633(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -4730,7 +4722,6 @@ class ElementDefinitionMapping(element.Element):
         """
         return ["id", "extension", "identity", "language", "map", "comment"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2635(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -4884,7 +4875,6 @@ class ElementDefinitionSlicing(element.Element):
         """
         return ["id", "extension", "discriminator", "description", "ordered", "rules"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2632(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -4999,7 +4989,6 @@ class ElementDefinitionSlicingDiscriminator(element.Element):
         """
         return ["id", "extension", "type", "path"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4011(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -5181,7 +5170,6 @@ class ElementDefinitionType(element.Element):
             "versioning",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2335(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

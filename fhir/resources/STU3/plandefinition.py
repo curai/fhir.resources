@@ -454,7 +454,6 @@ class PlanDefinition(domainresource.DomainResource):
             "action",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1618(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -958,7 +957,6 @@ class PlanDefinitionAction(backboneelement.BackboneElement):
             "action",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2224(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1091,7 +1089,6 @@ class PlanDefinitionActionCondition(backboneelement.BackboneElement):
             "expression",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3159(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1285,7 +1282,6 @@ class PlanDefinitionActionParticipant(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "role"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3381(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1445,7 +1441,6 @@ class PlanDefinitionActionRelatedAction(backboneelement.BackboneElement):
             "offsetRange",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3535(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1507,7 +1502,6 @@ class PlanDefinitionActionRelatedAction(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3535(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1767,7 +1761,6 @@ class PlanDefinitionGoalTarget(backboneelement.BackboneElement):
             "due",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2626(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

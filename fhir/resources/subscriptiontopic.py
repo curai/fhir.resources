@@ -406,7 +406,6 @@ class SubscriptionTopic(domainresource.DomainResource):
             "notificationShape",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1978(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -606,7 +605,6 @@ class SubscriptionTopicCanFilterBy(backboneelement.BackboneElement):
             "modifier",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3075(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -745,7 +743,6 @@ class SubscriptionTopicEventTrigger(backboneelement.BackboneElement):
             "resource",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3231(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -892,7 +889,6 @@ class SubscriptionTopicNotificationShape(backboneelement.BackboneElement):
             "revInclude",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3732(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1076,7 +1072,6 @@ class SubscriptionTopicResourceTrigger(backboneelement.BackboneElement):
             "fhirPathCriteria",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3557(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

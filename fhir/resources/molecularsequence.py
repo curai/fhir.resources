@@ -274,7 +274,6 @@ class MolecularSequence(domainresource.DomainResource):
             "structureVariant",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1935(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -594,7 +593,6 @@ class MolecularSequenceQuality(backboneelement.BackboneElement):
             "roc",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2700(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1095,7 +1093,6 @@ class MolecularSequenceRepository(backboneelement.BackboneElement):
             "readsetId",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3043(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

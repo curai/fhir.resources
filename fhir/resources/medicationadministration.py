@@ -380,7 +380,6 @@ class MedicationAdministration(domainresource.DomainResource):
             "eventHistory",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2686(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -439,7 +438,6 @@ class MedicationAdministration(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2686(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -618,7 +616,6 @@ class MedicationAdministrationDosage(backboneelement.BackboneElement):
             "rateQuantity",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3272(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

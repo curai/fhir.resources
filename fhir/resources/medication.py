@@ -279,7 +279,6 @@ class MedicationIngredient(backboneelement.BackboneElement):
             "strength",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2247(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

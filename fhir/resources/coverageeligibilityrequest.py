@@ -264,7 +264,6 @@ class CoverageEligibilityRequest(domainresource.DomainResource):
             "item",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2883(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -327,7 +326,6 @@ class CoverageEligibilityRequest(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2883(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -654,7 +652,6 @@ class CoverageEligibilityRequestItemDiagnosis(backboneelement.BackboneElement):
             "diagnosisReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4210(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -765,7 +762,6 @@ class CoverageEligibilityRequestSupportingInfo(backboneelement.BackboneElement):
             "appliesToAll",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4357(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

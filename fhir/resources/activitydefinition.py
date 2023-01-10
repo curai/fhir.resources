@@ -944,7 +944,6 @@ class ActivityDefinition(domainresource.DomainResource):
             "dynamicValue",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2053(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1003,7 +1002,6 @@ class ActivityDefinition(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2053(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1112,7 +1110,6 @@ class ActivityDefinitionDynamicValue(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "path", "expression"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3262(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1219,7 +1216,6 @@ class ActivityDefinitionParticipant(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "role"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3210(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
