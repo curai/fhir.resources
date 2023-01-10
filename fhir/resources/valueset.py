@@ -348,7 +348,6 @@ class ValueSet(domainresource.DomainResource):
             "expansion",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1011(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -666,7 +665,6 @@ class ValueSetComposeIncludeConcept(backboneelement.BackboneElement):
             "designation",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3161(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -781,7 +779,6 @@ class ValueSetComposeIncludeConceptDesignation(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "language", "use", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4296(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -927,7 +924,6 @@ class ValueSetComposeIncludeFilter(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "property", "op", "value"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3057(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1109,7 +1105,6 @@ class ValueSetExpansion(backboneelement.BackboneElement):
             "contains",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1954(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1476,7 +1471,6 @@ class ValueSetExpansionParameter(backboneelement.BackboneElement):
             "valueDateTime",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2887(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1535,7 +1529,6 @@ class ValueSetExpansionParameter(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2887(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

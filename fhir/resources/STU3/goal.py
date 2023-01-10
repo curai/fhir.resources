@@ -288,7 +288,6 @@ class Goal(domainresource.DomainResource):
             "outcomeReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_566(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -347,7 +346,6 @@ class Goal(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_566(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -520,7 +518,6 @@ class GoalTarget(backboneelement.BackboneElement):
             "dueDuration",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1189(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

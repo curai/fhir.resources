@@ -236,7 +236,6 @@ class AdministrableProductDefinition(domainresource.DomainResource):
             "routeOfAdministration",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3288(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -409,7 +408,6 @@ class AdministrableProductDefinitionProperty(backboneelement.BackboneElement):
             "status",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4168(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

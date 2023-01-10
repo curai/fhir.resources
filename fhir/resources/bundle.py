@@ -149,7 +149,6 @@ class Bundle(resource.Resource):
             "signature",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_769(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -450,7 +449,6 @@ class BundleEntryRequest(backboneelement.BackboneElement):
             "ifNoneExist",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2059(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -613,7 +611,6 @@ class BundleEntryResponse(backboneelement.BackboneElement):
             "outcome",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2146(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -779,7 +776,6 @@ class BundleLink(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "relation", "url"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1173(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

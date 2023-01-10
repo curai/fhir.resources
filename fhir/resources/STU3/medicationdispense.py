@@ -427,7 +427,6 @@ class MedicationDispense(domainresource.DomainResource):
             "eventHistory",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2026(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -609,7 +608,6 @@ class MedicationDispenseSubstitution(backboneelement.BackboneElement):
             "responsibleParty",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3344(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -218,7 +218,6 @@ class TestReport(domainresource.DomainResource):
             "teardown",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1252(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -338,7 +337,6 @@ class TestReportParticipant(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "uri", "display"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2403(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -524,7 +522,6 @@ class TestReportSetupActionAssert(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "result", "message", "detail"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3013(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -643,7 +640,6 @@ class TestReportSetupActionOperation(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "result", "message", "detail"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3326(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

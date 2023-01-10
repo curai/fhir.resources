@@ -172,7 +172,6 @@ class MedicationStatement(DomainResource):
         description="Additional supporting information.",
     )
 
-    @root_validator(pre=True)
     def validate_one_of_many(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         """https://www.hl7.org/fhir/formats.html#choice
         A few elements have a choice of more than one data type for their content.
@@ -326,7 +325,6 @@ class MedicationStatementDosage(BackboneElement):
         description="When/how often was medication taken.",
     )
 
-    @root_validator(pre=True)
     def validate_one_of_many(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         """https://www.hl7.org/fhir/formats.html#choice
         A few elements have a choice of more than one data type for their content.

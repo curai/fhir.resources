@@ -216,7 +216,6 @@ class QuestionnaireResponse(domainresource.DomainResource):
             "item",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2412(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -384,7 +383,6 @@ class QuestionnaireResponseItem(backboneelement.BackboneElement):
             "item",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2819(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -695,7 +693,6 @@ class QuestionnaireResponseItemAnswer(backboneelement.BackboneElement):
             "item",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3448(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

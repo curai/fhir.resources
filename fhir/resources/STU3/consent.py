@@ -346,7 +346,6 @@ class Consent(domainresource.DomainResource):
             "except",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_913(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -405,7 +404,6 @@ class Consent(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_913(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -555,7 +553,6 @@ class ConsentData(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "meaning", "reference"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1272(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -770,7 +767,6 @@ class ConsentExcept(backboneelement.BackboneElement):
             "data",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1530(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -939,7 +935,6 @@ class ConsentExceptData(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "meaning", "reference"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1889(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

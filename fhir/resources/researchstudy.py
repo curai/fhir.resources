@@ -402,7 +402,6 @@ class ResearchStudy(domainresource.DomainResource):
             "objective",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1553(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -523,7 +522,6 @@ class ResearchStudyArm(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "type", "description"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1829(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

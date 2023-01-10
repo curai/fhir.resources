@@ -581,7 +581,6 @@ class MedicinalProductDefinitionCharacteristic(backboneelement.BackboneElement):
             "valueAttachment",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_4297(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -793,7 +792,6 @@ class MedicinalProductDefinitionName(backboneelement.BackboneElement):
             "countryLanguage",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3235(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -950,7 +948,6 @@ class MedicinalProductDefinitionNameNamePart(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "part", "type"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4042(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -362,7 +362,6 @@ class SpecimenCollection(backboneelement.BackboneElement):
             "fastingStatusDuration",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2049(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -525,7 +524,6 @@ class SpecimenContainer(backboneelement.BackboneElement):
             "additiveReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1948(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -661,7 +659,6 @@ class SpecimenProcessing(backboneelement.BackboneElement):
             "timePeriod",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2059(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

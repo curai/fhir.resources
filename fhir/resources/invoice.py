@@ -263,7 +263,6 @@ class Invoice(domainresource.DomainResource):
             "note",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_891(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -423,7 +422,6 @@ class InvoiceLineItem(backboneelement.BackboneElement):
             "priceComponent",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1690(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -555,7 +553,6 @@ class InvoiceLineItemPriceComponent(backboneelement.BackboneElement):
             "amount",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3143(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

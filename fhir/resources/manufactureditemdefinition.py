@@ -141,7 +141,6 @@ class ManufacturedItemDefinition(domainresource.DomainResource):
             "property",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2866(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -304,7 +303,6 @@ class ManufacturedItemDefinitionProperty(backboneelement.BackboneElement):
             "valueAttachment",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_3746(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

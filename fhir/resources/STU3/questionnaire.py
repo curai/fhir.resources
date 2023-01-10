@@ -380,7 +380,6 @@ class Questionnaire(domainresource.DomainResource):
             "item",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1565(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -916,7 +915,6 @@ class QuestionnaireItem(backboneelement.BackboneElement):
             "item",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1972(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -975,7 +973,6 @@ class QuestionnaireItem(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1972(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1306,7 +1303,6 @@ class QuestionnaireItemEnableWhen(backboneelement.BackboneElement):
             "answerReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2958(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1365,7 +1361,6 @@ class QuestionnaireItemEnableWhen(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2958(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1519,7 +1514,6 @@ class QuestionnaireItemOption(backboneelement.BackboneElement):
             "valueCoding",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2606(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -435,7 +435,6 @@ class Task(domainresource.DomainResource):
             "output",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_594(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -494,7 +493,6 @@ class Task(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_594(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1117,7 +1115,6 @@ class TaskInput(backboneelement.BackboneElement):
             "valueMeta",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1131(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1778,7 +1775,6 @@ class TaskOutput(backboneelement.BackboneElement):
             "valueMeta",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1260(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

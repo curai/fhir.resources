@@ -160,7 +160,6 @@ class VisionPrescription(domainresource.DomainResource):
             "lensSpecification",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2110(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -428,7 +427,6 @@ class VisionPrescriptionLensSpecification(backboneelement.BackboneElement):
             "note",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3857(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -536,7 +534,6 @@ class VisionPrescriptionLensSpecificationPrism(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "amount", "base"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4379(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

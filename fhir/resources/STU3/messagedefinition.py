@@ -406,7 +406,6 @@ class MessageDefinition(domainresource.DomainResource):
             "allowedResponse",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1929(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -596,7 +595,6 @@ class MessageDefinitionFocus(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "code", "profile", "min", "max"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2446(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

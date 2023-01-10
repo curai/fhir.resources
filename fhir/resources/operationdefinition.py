@@ -475,7 +475,6 @@ class OperationDefinition(domainresource.DomainResource):
             "overload",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2167(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -802,7 +801,6 @@ class OperationDefinitionParameter(backboneelement.BackboneElement):
             "part",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3100(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -925,7 +923,6 @@ class OperationDefinitionParameterBinding(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "strength", "valueSet"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3788(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -1037,7 +1034,6 @@ class OperationDefinitionParameterReferencedFrom(backboneelement.BackboneElement
         """
         return ["id", "extension", "modifierExtension", "source", "sourceId"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_4510(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

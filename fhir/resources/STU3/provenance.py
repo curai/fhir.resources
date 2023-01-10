@@ -182,7 +182,6 @@ class Provenance(domainresource.DomainResource):
             "signature",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1222(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -371,7 +370,6 @@ class ProvenanceAgent(backboneelement.BackboneElement):
             "relatedAgentType",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1732(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -520,7 +518,6 @@ class ProvenanceEntity(backboneelement.BackboneElement):
             "agent",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1879(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -579,7 +576,6 @@ class ProvenanceEntity(backboneelement.BackboneElement):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1879(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

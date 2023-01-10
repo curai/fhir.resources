@@ -230,7 +230,6 @@ class ImagingManifestStudy(backboneelement.BackboneElement):
             "series",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2254(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -348,7 +347,6 @@ class ImagingManifestStudySeries(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "uid", "endpoint", "instance"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2867(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -453,7 +451,6 @@ class ImagingManifestStudySeriesInstance(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "sopClass", "uid"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3674(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

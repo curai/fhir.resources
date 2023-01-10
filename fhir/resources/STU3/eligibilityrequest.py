@@ -259,7 +259,6 @@ class EligibilityRequest(domainresource.DomainResource):
             "benefitSubCategory",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2073(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

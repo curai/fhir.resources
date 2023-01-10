@@ -185,7 +185,6 @@ class ClinicalImpression(DomainResource):
         description="Diagnosis considered not possible.",
     )
 
-    @root_validator(pre=True)
     def validate_one_of_many(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         """https://www.hl7.org/fhir/formats.html#choice
         A few elements have a choice of more than one data type for their content.

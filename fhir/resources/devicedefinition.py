@@ -338,7 +338,6 @@ class DeviceDefinition(domainresource.DomainResource):
             "material",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1803(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -476,7 +475,6 @@ class DeviceDefinitionDeviceName(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "name", "type"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2771(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -698,7 +696,6 @@ class DeviceDefinitionSpecialization(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "systemType", "version"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3274(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -832,7 +829,6 @@ class DeviceDefinitionUdiDeviceIdentifier(backboneelement.BackboneElement):
             "jurisdiction",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_3716(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

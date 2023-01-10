@@ -172,7 +172,6 @@ class ResearchSubject(domainresource.DomainResource):
             "consent",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1731(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -490,7 +490,6 @@ class DeviceRequest(domainresource.DomainResource):
             "relevantHistory",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1521(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -549,7 +548,6 @@ class DeviceRequest(domainresource.DomainResource):
 
         return values
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1521(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -684,7 +682,6 @@ class DeviceRequestParameter(backboneelement.BackboneElement):
             "valueBoolean",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2448(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -225,7 +225,6 @@ class MessageHeader(domainresource.DomainResource):
             "definition",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1485(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -345,7 +344,6 @@ class MessageHeaderDestination(backboneelement.BackboneElement):
             "receiver",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2635(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -471,7 +469,6 @@ class MessageHeaderResponse(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "identifier", "code", "details"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2319(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -623,7 +620,6 @@ class MessageHeaderSource(backboneelement.BackboneElement):
             "endpoint",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2097(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

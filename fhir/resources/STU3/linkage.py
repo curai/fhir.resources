@@ -140,7 +140,6 @@ class LinkageItem(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "type", "resource"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1283(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

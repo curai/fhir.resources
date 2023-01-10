@@ -262,7 +262,6 @@ class Sequence(domainresource.DomainResource):
             "pointer",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1009(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -569,7 +568,6 @@ class SequenceQuality(backboneelement.BackboneElement):
             "fScore",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1774(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -785,7 +783,6 @@ class SequenceReferenceSeq(backboneelement.BackboneElement):
             "windowEnd",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2229(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -972,7 +969,6 @@ class SequenceRepository(backboneelement.BackboneElement):
             "readsetId",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_2117(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

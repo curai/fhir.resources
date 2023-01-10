@@ -294,7 +294,6 @@ class Patient(domainresource.DomainResource):
             "link",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_921(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -553,7 +552,6 @@ class PatientLink(backboneelement.BackboneElement):
         """
         return ["id", "extension", "modifierExtension", "other", "type"]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_required_primitive_elements_1310(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

@@ -222,7 +222,6 @@ class SupplyDelivery(domainresource.DomainResource):
             "receiver",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1693(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
@@ -334,7 +333,6 @@ class SupplyDeliverySuppliedItem(backboneelement.BackboneElement):
             "itemReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_2918(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:

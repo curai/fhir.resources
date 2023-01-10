@@ -145,7 +145,6 @@ class MedicationAdministration(DomainResource):
         description="Reason administration not performed.",
     )
 
-    @root_validator(pre=True)
     def validate_one_of_many(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         """https://www.hl7.org/fhir/formats.html#choice
         A few elements have a choice of more than one data type for their content.
@@ -254,7 +253,6 @@ class MedicationAdministrationDosage(BackboneElement):
         None, alias="text", title="Type `String`.", description="Dosage Instructions."
     )
 
-    @root_validator(pre=True)
     def validate_one_of_many(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         """https://www.hl7.org/fhir/formats.html#choice
         A few elements have a choice of more than one data type for their content.

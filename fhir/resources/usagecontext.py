@@ -125,7 +125,6 @@ class UsageContext(element.Element):
             "valueReference",
         ]
 
-    @root_validator(pre=True, allow_reuse=True)
     def validate_one_of_many_1443(
         cls, values: typing.Dict[str, typing.Any]
     ) -> typing.Dict[str, typing.Any]:
